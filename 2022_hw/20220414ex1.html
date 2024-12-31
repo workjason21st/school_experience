@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>409411708-0414ex1</title>
+        <meta charset="utf-8">
+        <meta name="keywords" content="409411708,0414ex1">
+        <style>
+            .site{
+                display: grid;
+                grid-template-columns:2fr 1fr 1fr;
+                grid-template-rows:auto 1fr 3fr;
+            }
+            .header{
+                background-color: aquamarine;
+                grid-column: 2/4;
+                grid-row: 2/3;
+            }
+            .page-title{
+                background-color: lightsteelblue;
+                grid-column: 1/4;
+                /*grid-row: 1/2;*/
+            }
+            .main{
+                background-color: coral;
+                /*grid-column: 1/2;*/
+                grid-row: 2/4;
+            }
+            .sidebar{
+                background-color: olivedrab;
+                /*grid-column: 2/3;
+                grid-row: 3/4;*/
+            }
+            .footer{
+                background-color: firebrick;
+                /*grid-column: 3/4;
+                grid-row: 3/4;*/              
+            }
+        </style>
+    </head>
+    <body>
+        <div class="site">
+            <div class="header">header</div>
+            <div class="page-title">page-title</div>
+            <div class="main">main</div>
+            <div class="sidebar">sidebar</div>
+            <div class="footer">footer</div>
+        </div>
+    </body>
+</html>    

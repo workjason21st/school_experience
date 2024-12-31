@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>409411708-0526ex4</title>
+        <meta charset="utf-8">
+        <meta name="keywords" content="409411708,0526ex4">
+    </head>
+    <body>
+        <div id="div1" style="font-size: 50px">123</div>
+        <button id="red" onclick="">紅色</button>
+        <button id="blue" onclick="">藍色</button>
+        <button id="green" onclick="">綠色</button>
+        <script>
+            var div1=document.getElementById("div1");
+            
+            var redbutton=document.getElementById("red");
+            redbutton.addEventListener("click",redcolor);
+            function redcolor(){
+                div1.style.color="red";
+            }
+            var bluebutton=document.getElementById("blue");
+            bluebutton.addEventListener("click",bluecolor);
+            function bluecolor(){
+                div1.style.color="blue";
+            }
+            var greenbutton=document.getElementById("green");
+            greenbutton.addEventListener("click",greencolor);
+            function greencolor(){
+                div1.style.color="green";
+            }
+        </script>
+    </body>
+</html>    

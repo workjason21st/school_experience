@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>409411708-0602ex2</title>
+        <meta charset="utf-8">
+        <meta name="keywords" content="409411708,0602ex2">
+        <style>
+            #backcolor {
+                width: 600px;
+                height: 600px;
+                position: relative;
+                background-color: aqua;
+            }
+            #square{
+                width: 50px;
+                height: 50px;
+                position: absolute;
+                background-color:red;
+            }
+        </style>
+    </head>
+    <body>
+        <p><button type="button" onclick="move()">Start</button></p>
+        <div id="backcolor">
+            <div id="square"></div>
+        </div>
+        <script>
+            function move(){
+                var elem=document.getElementById("square");
+                var posleft=0,postop=0;
+                id=setInterval(animation,1);
+                
+                function animation(){
+                    if(posleft<550 && postop==0){
+                        posleft++;
+                        elem.style.left=posleft+"px";
+                    }
+                    else if(posleft==550 && postop<550){
+                        postop++;
+                        elem.style.top=postop+"px";
+                    }
+                    else if(posleft>=1 && postop==550){
+                        posleft--;
+                        elem.style.left=posleft+"px";
+                    }
+                    else if(posleft==0 && postop>=0){
+                        postop--;
+                        elem.style.top=postop+"px";
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>    

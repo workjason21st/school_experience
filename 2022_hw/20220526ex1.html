@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>409411708-0526ex1</title>
+        <meta charset="utf-8">
+        <meta name="keywords" content="409411708,0526ex1">
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script type="text/javascript">
+            function product(arr){
+            var i,j;
+            var mutiple=1;
+            for(j=0;j<arr.length;j++){
+                for(i=0;i<arr[j].length;i++){
+                    mutiple=mutiple*arr[j][i];
+                }
+            }
+            return mutiple;
+            }
+            var arr1 = product([[1,2],[3,4],[5,6,7]]);
+            document.write(arr1);
+            console.log(arr1);
+        </script>
+    </body>
+</html>    

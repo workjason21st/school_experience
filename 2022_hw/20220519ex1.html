@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>409411708-0519ex1</title>
+        <meta charset="utf-8">
+        <meta name="keywords" content="409411708,0519ex1">
+    </head>
+    <body>
+        <script>
+            function abc(){
+                testArr.push(6);
+                testArr.shift();
+            }
+            
+            var testArr=[1,2,3,4,5];
+            console.log("Before:"+testArr);
+            document.write("Before：",testArr,'<br>');
+            
+            abc();
+            console.log("After:"+testArr);
+            document.write("After：",testArr,'<br>');
+            
+            testArr.sort();
+            document.write("由小到大：",testArr,'<br>');
+            testArr.reverse();
+            document.write("由大到小：",testArr,'<br>');
+        </script>
+    </body>
+</html>    
