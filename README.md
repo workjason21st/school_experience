@@ -1,2 +1,2 @@
-# experience
-Store some of my experiences in learning programming.
+# school_experience
+Store some of my experiences learning programming in school.
